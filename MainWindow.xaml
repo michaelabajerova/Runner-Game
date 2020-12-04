@@ -6,7 +6,12 @@
         xmlns:local="clr-namespace:Runner_Game"
         mc:Ignorable="d"
         Title="Runner Game" Height="450" Width="800">
-    <Canvas Name="MyCanvas" Focusable="True" KeyDown="">
-
+    <Canvas Name="MyCanvas" Focusable="True" KeyDown="KeyIsDown" KeyUp="KeyIsUp" Background="LightBlue">
+        <Rectangle Name="background" Height="400" Width="1262" Fill="PaleVioletRed" Canvas.Left="0" />
+        <Rectangle Name="background2" Height="400" Width="1262" Fill="DimGray" Canvas.Left="1262" />
+        <Rectangle Name="ground" Height="32" Width="792" Fill="Black" Canvas.Top="387" Canvas.Left="0" />
+        <Rectangle Name="player" Height="99" Width="67" Fill="Brown" Canvas.Top="151" Canvas.Left="110" />
+        <Rectangle Name="obstacle" Height="178" Width="50" Fill="YellowGreen" Canvas.Top="320" Canvas.Left="721" />
+        <Label Name="scoreText" FontSize="32" FontWeight="Bold" Content="Score : 0" />
     </Canvas>
 </Window>
